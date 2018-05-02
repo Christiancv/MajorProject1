@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MajorProject1"
+             x:Class="MajorProject1.MainPage" BackgroundColor="Black">
+
+    <Grid Margin="5" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Label Text="Player One: X" FontAttributes="Bold" TextColor="Aqua" Grid.Row="0" Grid.Column="0" Margin="20"/>
+        <Label Text="Player Two: 0" FontAttributes="Bold" TextColor="Aqua" Grid.Row="0" Grid.Column="2" Margin="20" HorizontalTextAlignment="End"/>
+
+        <StackLayout x:Name="GameOverStackLayout" Grid.Row="0" Grid.Column="1" IsVisible="false" Margin="20">
+            <Label Text="Game Over" FontAttributes="Bold" TextColor="Aqua" HorizontalTextAlignment="Center" />
+            <Button Text="Play again" FontAttributes="Bold" TextColor="Black" BackgroundColor="Aqua"  Clicked="playagain_Clicked" />
+        </StackLayout>
+
+
+
+
+        
+            <Button x:Name="button1" Text="" FontAttributes="Bold" TextColor="Black" FontSize="Large" Grid.Row="1" Grid.Column="0" BackgroundColor="White" Clicked="button_Clicked"/>
+            <Button x:Name="button2" Text="" TextColor="White" FontSize="Large" Grid.Row="1" Grid.Column="1" BackgroundColor="HotPink" Clicked="button_Clicked"/>
+            <Button x:Name="button3" Text="" TextColor="Black" FontSize="Large" Grid.Row="1" Grid.Column="2" BackgroundColor="White" Clicked="button_Clicked"/>
+            <Button x:Name="button4" Text="" TextColor="Black" FontSize="Large" Grid.Row="2" Grid.Column="0" BackgroundColor="White" Clicked="button_Clicked"/>
+            <Button x:Name="button5" Text="" TextColor="White" FontSize="Large" Grid.Row="2" Grid.Column="1" BackgroundColor="HotPink" Clicked="button_Clicked"/>
+            <Button x:Name="button6" Text="" TextColor="Black" FontSize="Large" Grid.Row="2" Grid.Column="2" BackgroundColor="White" Clicked="button_Clicked"/>
+            <Button x:Name="button7" Text="" TextColor="Black" FontSize="Large" Grid.Row="3" Grid.Column="0" BackgroundColor="White" Clicked="button_Clicked"/>
+            <Button x:Name="button8" Text="" TextColor="White" FontSize="Large" Grid.Row="3" Grid.Column="1" BackgroundColor="HotPink" Clicked="button_Clicked"/>
+            <Button x:Name="button9" Text="" TextColor="Black" FontSize="Large" Grid.Row="3" Grid.Column="2" BackgroundColor="White" Clicked="button_Clicked"/>
+               
+
+
+
+
+
+
+
+    </Grid>
+
+</ContentPage>
